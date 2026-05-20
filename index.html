@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherApp</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="contenedor">
+      <div class="tarjeta" id="tarjeta">
+
+        <div class="buscador">
+          <input
+            type="text"
+            id="inputCiudad"
+            placeholder="Buscar ciudad..."
+            autocomplete="off"
+          />
+          <button id="btnBuscar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+
+        <button class="btn-ubicacion" id="btnUbicacion">
+          <i class="fa-solid fa-location-dot"></i>
+          Usar mi ubicación
+        </button>
+
+        <p class="error oculto" id="error">
+          Ciudad no encontrada. Intenta de nuevo.
+        </p>
+
+        <div class="clima oculto" id="clima">
+
+          <div class="ubicacion">
+            <i class="fa-solid fa-location-dot"></i>
+            <span id="ciudad"></span>,
+            <span id="pais"></span>
+          </div>
+
+          <img
+            id="iconoClima"
+            src=""
+            alt="clima"
+            class="icono-clima"
+          />
+
+          <div class="temperatura">
+            <span id="temp"></span>
+            <span class="unidad">°C</span>
+          </div>
+
+          <p class="descripcion" id="descripcion"></p>
+
+          <div class="detalles">
+            <div class="detalle">
+              <i class="fa-solid fa-droplet"></i>
+              <span id="humedad"></span>
+              <p>Humedad</p>
+            </div>
+
+            <div class="detalle">
+              <i class="fa-solid fa-wind"></i>
+              <span id="viento"></span>
+              <p>Viento</p>
+            </div>
+
+            <div class="detalle">
+              <i class="fa-solid fa-eye"></i>
+              <span id="visibilidad"></span>
+              <p>Visibilidad</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
