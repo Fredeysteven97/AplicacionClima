@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Aplicación del clima en tiempo real" />
     <title>WeatherApp</title>
     <link
       rel="stylesheet"
@@ -21,22 +22,19 @@
             placeholder="Buscar ciudad..."
             autocomplete="off"
           />
-          <button id="btnBuscar">
+          <button id="btnBuscar" title="Buscar">
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
+          <button id="btnUbicacion" title="Usar mi ubicación">
+            <i class="fa-solid fa-location-dot"></i>
+          </button>
         </div>
-
-        <button class="btn-ubicacion" id="btnUbicacion">
-          <i class="fa-solid fa-location-dot"></i>
-          Usar mi ubicación
-        </button>
 
         <p class="error oculto" id="error">
           Ciudad no encontrada. Intenta de nuevo.
         </p>
 
         <div class="clima oculto" id="clima">
-
           <div class="ubicacion">
             <i class="fa-solid fa-location-dot"></i>
             <span id="ciudad"></span>,
@@ -46,7 +44,7 @@
           <img
             id="iconoClima"
             src=""
-            alt="clima"
+            alt="ícono del clima"
             class="icono-clima"
           />
 
