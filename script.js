@@ -23,6 +23,7 @@ async function obtenerClimaPorCiudad(ciudad) {
     if (!response.ok) throw new Error("Ciudad no encontrada");
     const datos = await response.json();
     mostrarClima(datos);
+    inputCiudad.value = "";
   } catch (error) {
     mostrarError();
   }
