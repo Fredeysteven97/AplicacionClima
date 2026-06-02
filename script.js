@@ -1,4 +1,4 @@
-const API_KEY = "c65df87ea5661210daef07e064884515";
+const API_KEY = "Tu_API_KEY_AQUI"; // Reemplaza con tu propia API key de OpenWeatherMap
 const URL_BASE = `https://api.openweathermap.org/data/2.5/weather?appid=${API_KEY}&units=metric&lang=es`;
 
 const inputCiudad = document.getElementById("inputCiudad");
